@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_view_parent_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/list_item_height">
+
+
+    <ImageView
+        android:id="@+id/word_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/list_item_height"
+        android:minWidth="@dimen/list_item_height"
+        android:scaleType="centerCrop"
+        tools:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/texts_linear_layout"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/word_imageView"
+        android:orientation="vertical"
+        tools:background="@color/category_numbers"
+        android:paddingLeft="16dp"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/list_item_height">
+
+        <TextView
+            android:id="@+id/miwok_translation_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            tools:text="Miwok Word"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/user_language_translation_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            tools:text="User's Language Word"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/play_button_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="36dp"
+        android:minWidth="36dp"
+        android:src="@drawable/ic_play_circle_outline_white_36dp"
+        android:layout_gravity="center_horizontal|end"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp" />
+</RelativeLayout>
